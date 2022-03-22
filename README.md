@@ -26,7 +26,7 @@
 - 创建 Odoo 虚拟环境
 
   - `python3 -m venv ~/venv/[你自己指定的名字]`
-  - `source ~/[你自己指定的名字]/bin/activate`
+  - `source ~/venv/[你自己指定的名字]/bin/activate`
 
 - 安装 python 依赖
 

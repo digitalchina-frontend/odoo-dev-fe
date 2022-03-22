@@ -1,0 +1,12 @@
+{
+  "name": "odoo-dev-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:db": "docker-compose up -d"
+  },
+  "keywords": [],
+  "author": "fancn21th <fancn21th@aliyun.com> (http://fancn21th.cn/)",
+  "license": "MIT"
+}

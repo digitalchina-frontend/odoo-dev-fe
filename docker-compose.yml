@@ -1,0 +1,16 @@
+version: "3"
+services:
+  pqdb:
+    image: postgres:12.8
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - odoo-dev-fe:/var/lib/postgresql/data/pgdata
+
+volumes:
+  odoo-dev-fe:

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:db": "docker-compose up -d"
+    "start:db": "docker-compose up -d",
+    "start": "python ./odoo-14/odoo-bin --limit-memory-hard 0 -c ./config/odoo.conf"
   },
   "keywords": [],
   "author": "fancn21th <fancn21th@aliyun.com> (http://fancn21th.cn/)",

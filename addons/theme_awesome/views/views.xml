@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="theme_awesome.list">
+      <field name="name">theme_awesome list</field>
+      <field name="model">theme_awesome.theme_awesome</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="theme_awesome.action_window">
+      <field name="name">theme_awesome window</field>
+      <field name="res_model">theme_awesome.theme_awesome</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="theme_awesome.action_server">
+      <field name="name">theme_awesome server</field>
+      <field name="model_id" ref="model_theme_awesome_theme_awesome"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="theme_awesome" id="theme_awesome.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="theme_awesome.menu_1" parent="theme_awesome.menu_root"/>
+    <menuitem name="Menu 2" id="theme_awesome.menu_2" parent="theme_awesome.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="theme_awesome.menu_1_list" parent="theme_awesome.menu_1"
+              action="theme_awesome.action_window"/>
+    <menuitem name="Server to list" id="theme_awesome" parent="theme_awesome.menu_2"
+              action="theme_awesome.action_server"/>
+-->
+  </data>
+</odoo>

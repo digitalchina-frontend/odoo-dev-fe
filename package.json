@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:db": "docker-compose up -d",
-    "start": "python ./odoo-14/odoo-bin --limit-memory-hard 0 -c ./config/odoo.conf",
+    "start": "python ./odoo-14/odoo-bin --limit-memory-hard 0 -c ./config/odoo.conf -d odoo-dev-fe -u theme_awesome",
     "scaffold": "python ./odoo-14/odoo-bin scaffold theme_awesome ./addons"
   },
   "keywords": [],
